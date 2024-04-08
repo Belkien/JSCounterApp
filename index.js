@@ -74,6 +74,9 @@ function increment() {
     document.getElementById("count-el").innerText = count;
 }
 
+// 
+
+
 function save() {
     save = count;
     console.log("Save was clicked!");
@@ -81,3 +84,10 @@ function save() {
     document.getElementById("save-el").innerText = save;
 }
 
+var createHelloWorld = function(){
+    
+    return function (){
+        return "Hello World"
+    }
+}
+console.log (createHelloWorld()());
